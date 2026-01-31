@@ -1,0 +1,142 @@
+.contact-card {
+    background: #f2f3f5;
+    padding: 32px;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-hero-text {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+    margin-bottom: 40px;
+    margin-top: 1rem;
+    padding-right: 0rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    outline: none;
+    background: #ffffff;
+}
+
+.form-group textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4f6ef7;
+}
+
+.submit-btn {
+    margin-top: 8px;
+    background: #4f6ef7;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background: #3f5be0;
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .contact-hero-text {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    /* Change 2-column form to 1 column */
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 16px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: 16px;
+    }
+
+    .contact-hero-text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 14px;
+    }
+}

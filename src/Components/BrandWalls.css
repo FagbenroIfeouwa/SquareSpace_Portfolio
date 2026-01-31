@@ -1,0 +1,27 @@
+.brand-card {
+    background: #f4f6f8;
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all 0.25s ease;
+}
+
+.brand-card:hover {
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+.brand-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Emoji spacing */
+.sparkle {
+    margin-left: 6px;
+}

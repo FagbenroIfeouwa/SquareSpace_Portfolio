@@ -1,0 +1,551 @@
+.portfolio-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1.1fr 1.2fr;
+    grid-template-rows: auto;
+    gap: 24px;
+}
+
+/* Span 2 rows */
+.left-card {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.center-top {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.center-bottom {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.right-card {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.last-left-card {
+    grid-column: 1/ span 2;
+    grid-row: 3 / span 1;
+}
+
+.last-right-card {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* Styling helpers */
+.left-card,
+.center-top,
+.center-bottom,
+.right-card,
+.last-left-card,
+.last-right-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
+.expert-card {
+    background-color: #f5f6f7;
+    border-radius: 16px;
+    padding: 7px 7px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.expert-card:hover {
+    background-color: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+.expert-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.my-color {
+    color: #4770ff;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 180px;
+    /* control height */
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #f0f2f5;
+    padding: 15px 15px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* magic */
+    display: block;
+}
+
+
+.service-card {
+    background: #f5f6f8;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 16rem;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    background: #ffffff;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+}
+
+.service-icon-wrapper {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-bottom: 24px;
+}
+
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.service-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Link */
+.services-link {
+    color: #4c6fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.services-link:hover {
+    text-decoration: underline;
+}
+
+.hero-wrapper {
+    max-width: 520px;
+}
+
+
+/* Badge */
+.hero-badge {
+    display: inline-block;
+    background: #f4f6f8;
+    color: #4b5563;
+    padding: 10px 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Title */
+.hero-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #111827;
+}
+
+.wave {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+/* CTA Link */
+.hero-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4c6fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(76, 111, 255, 0.4);
+    padding-bottom: 2px;
+}
+
+.hero-link:hover {
+    color: #344bdb;
+    border-color: #344bdb;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+/* List */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Item row */
+.experience-item {
+    display: grid;
+    grid-template-columns: 90px 52px 1fr;
+    align-items: center;
+    column-gap: 16px;
+}
+
+/* Year */
+.year {
+    font-size: 15px;
+    font-weight: 600;
+    color: #667085;
+}
+
+/* Logo */
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #f2f4f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Details */
+.details h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.details p {
+    font-size: 14px;
+    color: #667085;
+    margin: 4px 0 0;
+}
+
+
+@media (max-width: 1024px) {
+
+    .portfolio-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* ONE column */
+        gap: 20px;
+    }
+
+    /* All cards take the same single column */
+    .left-card,
+    .center-top,
+    .center-bottom,
+    .right-card,
+    .last-left-card,
+    .last-right-card {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 18px;
+    }
+
+    /* Reduce service card height */
+    .service-card {
+        height: 14rem;
+        padding: 18px;
+    }
+
+
+    /* Reduce hero title */
+    .hero-title {
+        font-size: 36px;
+    }
+
+    /* Reduce section title */
+    .section-title {
+        font-size: 20px;
+    }
+
+    .service-icon-wrapper {
+        margin-bottom: 9px;
+    }
+
+    .service-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust image wrapper height */
+    .image-wrapper {
+        height: 160px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .portfolio-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* ONE column */
+        gap: 20px;
+    }
+
+    /* All cards take the same single column */
+    .left-card,
+    .center-top,
+    .center-bottom,
+    .right-card,
+    .last-left-card,
+    .last-right-card {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 18px;
+    }
+
+    /* Reduce service card height */
+    .service-card {
+        height: 14rem;
+        padding: 18px;
+    }
+
+
+    /* Reduce hero title */
+    .hero-title {
+        font-size: 36px;
+    }
+
+    /* Reduce section title */
+    .section-title {
+        font-size: 22px;
+    }
+
+    .service-icon-wrapper {
+        margin-left: 5rem;
+    }
+
+    .service-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust image wrapper height */
+    .image-wrapper {
+        height: 160px;
+    }
+}
+
+
+/* ========================================
+   MOBILE FIX (767px and smaller)
+   ======================================== */
+@media (max-width: 767px) {
+
+    /* Single column layout for mobile */
+    .portfolio-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* All cards stack in single column */
+    .left-card,
+    .center-top,
+    .center-bottom,
+    .right-card,
+    .last-left-card,
+    .last-right-card {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 16px;
+    }
+
+    /* Reduce hero title for mobile */
+    .hero-title {
+        font-size: 28px;
+    }
+
+    /* Reduce hero wrapper max-width */
+    .hero-wrapper {
+        max-width: 100%;
+    }
+
+    /* Smaller badge */
+    .hero-badge {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    /* Smaller hero link */
+    .hero-link {
+        font-size: 15px;
+    }
+
+    /* Section title smaller */
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* Service card adjustments */
+    .service-card {
+        height: auto;
+        min-height: 12rem;
+        padding: 16px;
+    }
+
+    .service-icon-wrapper {
+        padding: 20px;
+        margin-bottom: 18px;
+        margin-left: 5rem;
+    }
+
+    .service-icon-wrapper .service-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-title {
+        font-size: 15px;
+    }
+
+    /* Image wrapper smaller */
+    .image-wrapper {
+        height: 140px;
+        padding: 12px;
+    }
+
+    /* Expert card smaller */
+    .expert-card {
+        padding: 6px;
+    }
+
+    .expert-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Experience item - stack vertically on very small screens */
+    .experience-item {
+        grid-template-columns: 80px 48px 1fr;
+        column-gap: 12px;
+    }
+
+    .year {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .details h4 {
+        font-size: 15px;
+    }
+
+    .details p {
+        font-size: 13px;
+    }
+
+    /* Reduce experience list gap */
+    .experience-list {
+        gap: 18px;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE FIX (576px and smaller)
+   ======================================== */
+@media (max-width: 576px) {
+
+    /* Extra small adjustments */
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    /* Stack experience items completely on tiny screens */
+    .experience-item {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        display: grid;
+        grid-template-columns: 90px 52px 1fr;
+        align-items: center;
+        column-gap: 22px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    /* Smaller gaps */
+    .portfolio-layout {
+        gap: 12px;
+    }
+
+    .image-wrapper {
+        height: auto;
+        padding: 10px;
+    }
+
+    .image-wrapper img {
+        height: auto;
+    }
+
+    h1,
+    h2 {
+        padding-left: 8px;
+    }
+
+    .hero-link {
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 8px;
+    }
+
+    .right-card h1 {
+        display: block;
+    }
+}

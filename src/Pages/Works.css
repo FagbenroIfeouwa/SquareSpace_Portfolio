@@ -1,0 +1,41 @@
+.works-hero-text {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+    margin-bottom: 40px;
+    padding-right: 0rem;
+}
+
+.project-card {
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    background-color: #f5f6f7;
+    padding: 25px;
+    border-radius: 16px;
+    margin-top: 4rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+@media (max-width:991px) {
+    h1 {
+        padding-left: 0rem;
+    }
+}

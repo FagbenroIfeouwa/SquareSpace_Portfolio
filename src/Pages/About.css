@@ -1,0 +1,212 @@
+.about-container {
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+
+}
+
+.about-left,
+.hero {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about-left {
+    position: sticky;
+    top: 0;
+    height: 110vh;
+}
+
+.hero {
+    padding: 32px;
+}
+
+.hero {
+    position: relative;
+    padding: 36px 36px;
+    padding-bottom: 0rem;
+    height: 110vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.hero h1 {
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.accent {
+    color: #4f6cff;
+}
+
+/* Availability badge */
+.availability {
+    background: #f2f4f7;
+    padding: 10px 12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    color: #4f6cff;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #4f6cff;
+    border-radius: 50%;
+}
+
+/* Description */
+.hero-text {
+    max-width: 620px;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #667085;
+    margin-bottom: 40px;
+    margin-top: 1rem;
+    padding-right: 8rem;
+}
+
+
+.hero-text strong {
+    color: #101828;
+}
+
+/* Stats */
+.hero-stats {
+    display: flex;
+    gap: 60px;
+}
+
+.stat h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.stat p {
+    font-size: 15px;
+    color: #667085;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transform: rotate(90deg);
+}
+
+.scroll-indicator span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #667085;
+}
+
+.circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #4f6cff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.circle i {
+    animation: bounce 1.6s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+
+.hero-badge {
+    display: inline-block;
+    background: #f4f6f8;
+    color: #4b5563;
+    padding: 10px 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+
+    .about-left {
+        position: static;
+        height: auto;
+    }
+
+    .hero {
+        height: auto;
+        overflow: visible;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .hero-text {
+        font-size: 18px;
+        padding-right: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero-stats {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .stat h2 {
+        font-size: 30px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
