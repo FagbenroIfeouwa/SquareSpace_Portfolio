@@ -29,7 +29,7 @@ function MyHeadFixedCard() {
             </button>
           </Link>
 
-          <Link to="/contact">
+          <Link to="/contact" className="no-underline">
             <button className="btn-outline">
               <i className="bi bi-copy"></i>
               Copy Email

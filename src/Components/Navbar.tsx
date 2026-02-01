@@ -140,7 +140,7 @@ type RightActionsProps = {
 /* Right buttons */
 const RightActions = ({ mobile = false }: RightActionsProps) => (
   <div className={`d-flex ${mobile ? "flex-column" : ""} gap-3`}>
-    <button className="btn btn-light rounded-circle">
+    <button className="btn btn-light rounded-circle align-self-start">
       <i className="bi bi-moon"></i>
     </button>
 

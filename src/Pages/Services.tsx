@@ -23,7 +23,7 @@ function Services() {
           <div className="hero-content">
             <div className="hero-top">
               <h1>
-                Services I <span className="accent">Offered</span> 👋
+                Services I <span className="accent">Offer</span> 👋
               </h1>
 
               <div className="availability">

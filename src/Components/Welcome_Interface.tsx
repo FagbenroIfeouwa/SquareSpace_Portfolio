@@ -135,7 +135,7 @@ function WelcomeInterface() {
 
         <div className="last-left-card">
           <div className="d-flex justify-content-between align-items-center mb-4">
-            <h2 className="fw-bold mb-0 fs-4">Services I Offered</h2>
+            <h2 className="fw-bold mb-0 fs-4">Services I Offer</h2>
 
             <Link to="/services" className="text-decoration-none">
               <span className="services-link">See All Services →</span>

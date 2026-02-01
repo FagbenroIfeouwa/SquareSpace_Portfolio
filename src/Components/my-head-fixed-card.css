@@ -76,6 +76,10 @@
      gap: 8px;
  }
 
+ .no-underline {
+     text-decoration: none;
+ }
+
  /* Socials */
  .profile-socials {
      display: flex;
