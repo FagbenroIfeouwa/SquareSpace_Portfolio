@@ -1,4 +1,4 @@
-import myHeadshot from "../assets/my-headshot.jpg";
+import myHeadshot from "../assets/new-headshot.jpg";
 import "./my-head-fixed-card.css";
 import { Link } from "react-router-dom";
 
